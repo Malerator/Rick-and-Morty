@@ -1,0 +1,182 @@
+body {
+  background-color: black;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: "Get_schwifty";
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: -0.02em;
+  color: red;
+}
+
+/* header */
+
+header {
+  background-image: url("./images/kartinki-rik-i-morti-39.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 10px 0;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+}
+
+.form {
+  margin-top: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.input {
+  padding: 9px 361px 8px 17px;
+  width: 452px;
+  font-family: "Get_schwifty";
+  font-size: 24px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: rgb(40, 70, 70);
+}
+
+.input::placeholder {
+  color: red;
+}
+
+.select {
+  padding: 9px 90px 9px 15px;
+  width: 216px;
+  font-family: "Get_schwifty";
+  font-size: 22px;
+  font-weight: 400;
+  outline: none;
+  border: none;
+  color: red;
+  border-radius: 20px;
+  background-color: rgb(40, 70, 70);
+  cursor: pointer;
+}
+
+.select::-ms-expand {
+  display: none;
+}
+
+/* main */
+
+.wrapper_cards {
+  display: grid;
+  grid-template-columns: 334px 334px 334px;
+  gap: 40px;
+  justify-content: center;
+  overflow: scroll;
+  height: 700px;
+  padding-top: 20px;
+}
+
+.card {
+  background-color: #152536;
+  border-radius: 50px;
+  max-width: 334px;
+  box-shadow: 0px 8px 35px red;
+}
+
+.card:hover {
+  color: #3a7999;
+  box-shadow: 0px 8px 35px greenyellow;
+}
+
+.card_image {
+  border-radius: 50px;
+}
+
+img {
+  border-radius: 50px 50px 0 0;
+}
+
+.card_items {
+  padding: 25px;
+  background-color: #152536;
+  border-radius: 50px;
+}
+
+.card_items--h3 {
+  font-family: "Get_schwifty";
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  color: red;
+}
+
+.card_items--p {
+  font-family: "Get_schwifty";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: yellow;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  body {
+    padding: 0 40px;
+  }
+
+  img {
+    max-width: 320px;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: "Get_schwifty";
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 63px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .container {
+    max-width: 320px;
+  }
+
+  .form {
+    display: block;
+  }
+
+  .wrapper_cards {
+    display: block;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .input {
+    max-width: 320px;
+    padding: 9px 232px 8px 12px;
+  }
+
+  .select {
+    max-width: 320px;
+    padding: 9px 197px 8px 15px;
+  }
+}
+
+@font-face {
+  font-family: "Get_schwifty";
+  src: url("./fonts/get_schwifty.woff") format("woff");
+}
